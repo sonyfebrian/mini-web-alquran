@@ -22,8 +22,11 @@
         "react/react-in-jsx-scope": "off",
         "jsx-a11y/anchor-is-valid": "off",
         "react/prop-types": "off",
+        "linebreak-style": 0,
+"global-require": 0,
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     },
+    
     "globals": {
         "React": "writable"
     }

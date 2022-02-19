@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Surah from '../components/surah';
-import Footer from '../components/footer';
 import Header from '../components/header';
 import ApiService from '../services/api';
 
@@ -22,7 +21,7 @@ export default function Home({ recommendedSurahs }) {
   return (
     <>
       <Header />
-      <main className="container content">
+      <main className="container">
         <div className="bg-teal-600 rounded-lg shadow py-4 px-4 my-4">
           <img src="/Quran-reading.svg" alt="Reading quran illustration" className="md:w-5/12 h-40 md:h-auto mx-auto" />
         </div>
@@ -40,7 +39,7 @@ export default function Home({ recommendedSurahs }) {
           ))}
         </div>
       </main>
-      <Footer />
+
     </>
   );
 }
