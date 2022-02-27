@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Verse from '../../components/verse';
-import Footer from '../../components/footer';
 import ApiService from '../../services/api';
 import app from '../../data/app.json';
 
@@ -95,7 +94,7 @@ export default function SurahPage({ surah, previousSurah, nextSurah }) {
           </Link>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
