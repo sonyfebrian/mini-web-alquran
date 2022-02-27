@@ -31,6 +31,15 @@ export default function About() {
             </Link>
           </span>
         </div>
+        <div className="py-3 text-center">
+          <h4 className="text-semibold font-lg">Rekomendasi youtube channel</h4>
+          <span className="block text-gray-700">
+            <Link href="https://www.youtube.com/channel/UCrrkJ_leRabFU-WuwGwLtxw">
+              <a target="_blank" rel="noopener noreferrer" className="text-teal-700 underline px-2">youtube</a>
+            </Link>
+          </span>
+        </div>
+
       </main>
       {/* <Footer /> */}
     </>
