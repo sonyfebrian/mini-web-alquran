@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { navs } from '../data/navs.json';
 
 export default function Header() {
-  const menuItems = [
-    { title: 'Home', url: 'https://themeptation.net' },
-    { title: 'Products', url: 'https://themeptation.net' },
-    { title: 'Contact', url: 'https://themeptation.net' },
-  ];
-
   const [animateHeader, setAnimateHeader] = useState(false);
 
   useEffect(() => {
@@ -38,11 +33,11 @@ export default function Header() {
           </a>
           <nav>
             <ul className="flex items-center justify-start">
-              {menuItems?.map((item) => (
-                <li key={item?.title}>
-                  <Link href={item?.url}>
+              {navs?.map((item) => (
+                <li key={item?.id}>
+                  <Link href={item?.path}>
                     <a className="px-2 lg:px-6 py-6 text-md border-b-2 border-transparent hover:border-indigo-400 leading-[22px] md:px-3 text-gray-400 hover:text-indigo-500">
-                      {item?.title}
+                      {item?.name}
                     </a>
                   </Link>
                 </li>
